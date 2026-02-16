@@ -34,7 +34,7 @@ namespace Updater {
         std::cout << "[Updater] Checking for offset updates..." << std::endl;
         
         // 1. Client DLL Offsets (schemas)
-        std::string clientData = FetchURL("https://raw.githubusercontent.com/a2x/cs2-dumper/main/output/client_dll.json");
+        std::string clientData = FetchURL("https://ob.tonyha7.com/client_dll.json");
         if (!clientData.empty()) {
             try {
                 json j = json::parse(clientData);
@@ -104,7 +104,7 @@ namespace Updater {
         }
 
         // 2. Global Offsets
-        std::string offsetsData = FetchURL("https://raw.githubusercontent.com/a2x/cs2-dumper/main/output/offsets.json");
+        std::string offsetsData = FetchURL("https://ob.tonyha7.com/offsets.json");
         if(!offsetsData.empty()) {
              try {
                 json j = json::parse(offsetsData);

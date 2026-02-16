@@ -315,7 +315,7 @@ public:
         if (!curl) return;
 
         std::string readBuffer;
-        curl_easy_setopt(curl, CURLOPT_URL, "https://raw.githubusercontent.com/ByMykel/CSGO-API/main/public/api/en/skins.json");
+        curl_easy_setopt(curl, CURLOPT_URL, "https://ob.tonyha7.com/skins_cn.json");
         curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, WriteCallback);
         curl_easy_setopt(curl, CURLOPT_WRITEDATA, &readBuffer);
         curl_easy_setopt(curl, CURLOPT_FOLLOWLOCATION, 1L);
